@@ -2,7 +2,7 @@
 
 ## [`Includes`](./length.ts)
 
-### Type Definition
+### Definition
 
 ```ts
 type Includes<Src extends string, Search extends string> = Src extends `${Search}${infer _Rest}`
@@ -14,7 +14,7 @@ type Includes<Src extends string, Search extends string> = Src extends `${Search
     : never;
 ```
 
-### Type Usage
+### Usage
 
 ```ts
 type _0 = Includes<"", "">; // true
@@ -26,7 +26,7 @@ type _3 = Includes<"hello world", "goodbye">; // false
 
 ## [`IndexOf`](./index-of.ts)
 
-### Type Definition
+### Definition
 
 ```ts
 namespace IndexOf {
@@ -43,7 +43,7 @@ namespace IndexOf {
 type IndexOf<Src extends string, Search extends string> = IndexOf._0<Src, Search>;
 ```
 
-### Type Usage
+### Usage
 
 ```ts
 type _0 = IndexOf<"", "">; // 0
