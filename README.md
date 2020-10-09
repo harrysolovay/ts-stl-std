@@ -55,7 +55,7 @@ type _4 = IndexOf<"hello world", "x">; // -1
 
 ## [`Length`](./length.ts)
 
-### Type Definition
+### Definition
 
 ```ts
 type Chars<Src extends string> = Src extends ""
@@ -67,7 +67,7 @@ type Chars<Src extends string> = Src extends ""
 type Length<Src extends string> = Chars<Src>["length"];
 ```
 
-### Type Usage
+### Usage
 
 ```ts
 type _0 = Length<"">; // 0
@@ -77,7 +77,7 @@ type _2 = Length<"lorem ipsum, length surpasses 16 chars">; // ts-error
 
 ## [`StartsWith`](./starts-with.ts)
 
-### Type Definition
+### Definition
 
 ```ts
 type StartsWith<Src extends string, Search extends string> =
@@ -86,7 +86,7 @@ type StartsWith<Src extends string, Search extends string> =
     : false;
 ```
 
-### Type Usage
+### Usage
 
 ```ts
 type _0 = StartsWith<"", "">; // true
@@ -98,7 +98,7 @@ type _3 = StartsWith<"hello world", "ello">; // false
 
 ## [`EndsWith`](./ends-with.ts)
 
-### Type Definition
+### Definition
 
 ```ts
 type EndsWith<Src extends string, Search extends string> =
@@ -107,7 +107,7 @@ type EndsWith<Src extends string, Search extends string> =
     : false;
 ```
 
-### Type Usage
+### Usage
 
 ```ts
 type _0 = EndsWith<"", "">; // true
