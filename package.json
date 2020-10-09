@@ -1,0 +1,21 @@
+{
+  "name": "ts-stl-std",
+  "license": "Apache-2.0",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "private": true,
+  "description": "Write string std lib utils in TypeScript 4.1 types",
+  "repository": "github:harrysolovay/ts-stl-std",
+  "bugs": "https://github.com/harrysolovay/ts-stl-std/issues",
+  "homepage": "https://github.com/harrysolovay/ts-stl-std#readme",
+  "contributors": [
+    "Harry Solovay <harrysolovay@gmail.com>"
+  ],
+  "devDependencies": {
+    "conditional-type-checks": "^1.0.5",
+    "typescript": "^4.1.0-dev.20201009"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
